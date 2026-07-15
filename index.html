@@ -91,8 +91,8 @@ footer {
 
 <h2>⏳ Next Event</h2>
 
-<div class="countdown">
-Coming Soon
+<div class="countdown" id="countdown">
+Loading...
 </div>
 
 <p style="text-align:center;">
@@ -153,6 +153,56 @@ New announcements will appear here.
 2026 Regional Convention AV Department
 </footer>
 
+
+<script>
+
+const eventDate = new Date("July 30, 2026 07:00:00").getTime();
+
+const timer = setInterval(function() {
+
+    const now = new Date().getTime();
+
+    const distance = eventDate - now;
+
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) /
+        (1000 * 60 * 60)
+    );
+
+    const minutes = Math.floor(
+        (distance % (1000 * 60 * 60)) /
+        (1000 * 60)
+    );
+
+    const seconds = Math.floor(
+        (distance % (1000 * 60)) /
+        1000
+    );
+
+
+    document.getElementById("countdown").innerHTML =
+    days + " Days<br>" +
+    hours + " Hours<br>" +
+    minutes + " Minutes<br>" +
+    seconds + " Seconds";
+
+
+    if (distance < 0) {
+
+        clearInterval(timer);
+
+        document.getElementById("countdown").innerHTML =
+        "Move-In Has Begun!";
+
+    }
+
+
+}, 1000);
+
+</script>
 
 </body>
 </html>
