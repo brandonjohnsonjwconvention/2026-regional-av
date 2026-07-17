@@ -1,90 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>2026 Regional Convention AV Portal</title>
+<title>Athens AV Hub</title>
 
 <style>
+
+:root {
+    --blue: #1f5fae;
+    --light-blue: #eaf3ff;
+    --background: #f5f7fb;
+    --card: #ffffff;
+    --text: #1f2937;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #f5f7fa;
-    color: #222;
+    background: var(--background);
+    color: var(--text);
 }
 
 header {
-    background: #1f5fae;
+    background: linear-gradient(135deg, #1f5fae, #2f80d0);
     color: white;
-    padding: 30px 20px;
+    padding: 35px 20px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 26px;
+    font-size: 30px;
 }
 
 header p {
-    margin-top: 8px;
+    margin: 8px 0 0;
+    opacity: .9;
 }
+
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 15px;
+}
+
 
 .card {
-    background: white;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 18px;
-    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+
+    background: var(--card);
+    border-radius: 22px;
+    padding: 22px;
+    margin-bottom: 18px;
+
+    box-shadow:
+    0 5px 18px rgba(0,0,0,.07);
+
 }
+
+
+.card h2 {
+
+    margin-top: 0;
+    font-size: 20px;
+
+}
+
 
 .countdown {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    color: #1f5fae;
+
+    text-align:center;
+    color:var(--blue);
+    font-size:26px;
+    font-weight:700;
+
 }
+
+
+.status {
+
+    background:var(--light-blue);
+    border-radius:16px;
+    padding:15px;
+    text-align:center;
+
+}
+
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+
 }
+
 
 .department {
-    text-align: center;
-    padding: 20px 10px;
-    border-radius: 16px;
-    background: #eef5ff;
-    font-size: 18px;
+
+    background:var(--light-blue);
+    padding:20px 10px;
+    border-radius:18px;
+    text-align:center;
+    font-weight:600;
+    font-size:17px;
+
 }
+
 
 .icon {
-    font-size: 32px;
-    display: block;
-    margin-bottom: 8px;
+
+    display:block;
+    font-size:32px;
+    margin-bottom:8px;
+
 }
+
+
+.quick {
+
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+
+}
+
+
+.quick div {
+
+    font-size:14px;
+
+}
+
+
+.quick span {
+
+    display:block;
+    font-size:28px;
+
+}
+
 
 .notice {
-    border-left: 5px solid #1f5fae;
-    padding-left: 12px;
+
+    border-left:4px solid var(--blue);
+    padding-left:12px;
+
 }
 
+
 footer {
-    text-align: center;
-    padding: 20px;
-    color: #666;
+
+    text-align:center;
+    padding:25px;
+    color:#777;
+    font-size:14px;
+
 }
+
+
 </style>
 
 </head>
 
+
 <body>
 
+
 <header>
-<h1>2026 Regional Convention</h1>
-<p>Athens, Georgia<br>AV Operations Portal</p>
+
+<h1>Athens AV Hub</h1>
+
+<p>
+2026 Regional Convention<br>
+AV Operations Portal
+</p>
+
 </header>
+
+
+
+<div class="container">
+
 
 
 <div class="card">
@@ -96,113 +201,225 @@ Loading...
 </div>
 
 <p style="text-align:center;">
-Convention schedule will appear here.
+Move-In
+<br>
+Thursday, July 30 • 7:00 AM
 </p>
 
 </div>
+
+
+
+
+<div class="card">
+
+<h2>🟢 Current Status</h2>
+
+<div class="status">
+
+Preparing for Move-In
+
+</div>
+
+</div>
+
+
 
 
 <div class="card">
 
 <h2>Departments</h2>
 
+
 <div class="grid">
+
 
 <div class="department">
 <span class="icon">🎤</span>
 Audio
 </div>
 
+
 <div class="department">
 <span class="icon">📹</span>
 Video
 </div>
+
 
 <div class="department">
 <span class="icon">💻</span>
 IT
 </div>
 
+
 <div class="department">
 <span class="icon">🎙</span>
 Platform
 </div>
+
 
 <div class="department">
 <span class="icon">💄</span>
 Makeup
 </div>
 
+
 </div>
 
 </div>
+
+
+
 
 
 <div class="card">
 
 <h2>📢 Announcements</h2>
 
+
 <div class="notice">
-New announcements will appear here.
-</div>
+
+Welcome to the Athens AV Hub.
+
+Updates will appear here.
 
 </div>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h2>Quick Access</h2>
+
+
+<div class="quick">
+
+
+<div>
+<span>📄</span>
+Documents
+</div>
+
+
+<div>
+<span>📅</span>
+Schedule
+</div>
+
+
+<div>
+<span>👥</span>
+Personnel
+</div>
+
+
+<div>
+<span>☎️</span>
+Contacts
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
 
 
 <footer>
-2026 Regional Convention AV Department
+
+2026 Athens Regional Convention AV Department
+
 </footer>
+
+
 
 
 <script>
 
-const eventDate = new Date("July 30, 2026 07:00:00").getTime();
 
-const timer = setInterval(function() {
-
-    const now = new Date().getTime();
-
-    const distance = eventDate - now;
+const eventDate =
+new Date("July 30, 2026 07:00:00").getTime();
 
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
-    const hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) /
-        (1000 * 60 * 60)
-    );
-
-    const minutes = Math.floor(
-        (distance % (1000 * 60 * 60)) /
-        (1000 * 60)
-    );
-
-    const seconds = Math.floor(
-        (distance % (1000 * 60)) /
-        1000
-    );
+function updateCountdown(){
 
 
-    document.getElementById("countdown").innerHTML =
-    days + " Days<br>" +
-    hours + " Hours<br>" +
-    minutes + " Minutes<br>" +
-    seconds + " Seconds";
+const now =
+new Date().getTime();
 
 
-    if (distance < 0) {
-
-        clearInterval(timer);
-
-        document.getElementById("countdown").innerHTML =
-        "Move-In Has Begun!";
-
-    }
+const distance =
+eventDate - now;
 
 
-}, 1000);
+
+if(distance < 0){
+
+document.getElementById("countdown").innerHTML =
+"Move-In Has Begun!";
+
+return;
+
+}
+
+
+
+const days =
+Math.floor(distance/(1000*60*60*24));
+
+
+const hours =
+Math.floor(
+(distance%(1000*60*60*24))/(1000*60*60)
+);
+
+
+const minutes =
+Math.floor(
+(distance%(1000*60*60))/(1000*60)
+);
+
+
+const seconds =
+Math.floor(
+(distance%(1000*60))/1000
+);
+
+
+
+document.getElementById("countdown").innerHTML =
+`${days} Days<br>
+${hours} Hours<br>
+${minutes} Minutes<br>
+${seconds} Seconds`;
+
+
+}
+
+
+
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+
 
 </script>
 
+
+
 </body>
+
 </html>
